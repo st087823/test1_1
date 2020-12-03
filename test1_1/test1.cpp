@@ -102,12 +102,14 @@ int ch(double x, int n) {
 	double result = 1;
 	int i = 2;
 
-	while (x > 0.000000001 * factorial(i))
+	while (x > 0.000000001 * fact(i))
 	{
 		if (i % 2 == 0)
-		double factorial = fact(2 * i);
-		x = pow(x, (2 * i));
-		result += x / factorial;
+		{
+			double factorial = fact(i);
+			x = pow(x, i);
+			result += x / factorial;
+		}
 		i++;
 	}
 	return result;

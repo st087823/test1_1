@@ -11,7 +11,7 @@ bool isDigit(char symbol)
 	return symbol >= '0' && symbol <= '9';
 }
 
-int stringToDouble(string& str)
+double stringToDouble(string& str)
 {
 	double number = 0;
 	int signum = 1;

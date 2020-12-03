@@ -98,12 +98,17 @@ long double fact(int N)
 
 int ch(double x, int n) {
 	double result = 0;
-	for (int i = 0; i <= n; i++)
+	int i = 0;
+	double result = 1;
+	int i = 2;
+
+	while (x > 0.000000001 * factorial(i))
 	{
+		if (i % 2 == 0)
 		double factorial = fact(2 * i);
 		x = pow(x, (2 * i));
 		result += x / factorial;
-
+		i++;
 	}
 	return result;
 }

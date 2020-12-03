@@ -102,7 +102,7 @@ int ch(double x, int n) {
 	double result = 1;
 	int i = 2;
 
-	while (x > 0.000000001 * fact(i))
+	while (abs(x) > 0.000000001 * fact(i))
 	{
 		if (i % 2 == 0)
 		{
